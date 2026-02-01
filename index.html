@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>A Question From the Heart</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #ff758c, #ff7eb3);
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+    .card {
+      background: rgba(0,0,0,0.25);
+      padding: 40px;
+      border-radius: 25px;
+      max-width: 420px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+      animation: fadeIn 1.5s ease;
+    }
+    h1 {
+      margin-bottom: 20px;
+      font-size: 30px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.8;
+      margin-bottom: 30px;
+    }
+    button {
+      background: #ff2d55;
+      border: none;
+      padding: 15px 50px;
+      font-size: 22px;
+      color: white;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #ff0033;
+      transform: scale(1.05);
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>💖 A Question From the Heart 💖</h1>
+    <p>
+      From the moment I met you,  
+      I knew you were the one I want to spend my life with.
+      <br><br>
+      Will you marry me?
+    </p>
+    <button onclick="sayYes()">Yes 💍</button>
+  </div>
+
+  <script>
+    function sayYes() {
+      document.body.innerHTML = `
+        <div style="
+          display:flex;
+          justify-content:center;
+          align-items:center;
+          height:100vh;
+          background:#ff2d55;
+          color:white;
+          font-family:Arial, Helvetica, sans-serif;
+          text-align:center;
+          padding:20px;">
+          <h1>
+            ❤️ She said YES ❤️<br><br>
+            Our forever starts today 💍
+          </h1>
+        </div>`;
+    }
+  </script>
+
+</body>
+</html>
